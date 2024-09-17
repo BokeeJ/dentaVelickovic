@@ -4,23 +4,32 @@ import { IoMenu } from "react-icons/io5";
 
 function Navbar() {
     const [toggle, setToggle] = useState(false);
-    const [isVisible, setIsVisible] = useState(true); // Dodato stanje za vidljivost
 
-    const handleToggle = () => {
-        setToggle(!toggle);
+    const handleToggle = (event) => {
+        event.stopPropagation(); // Zaustavi propagaciju klika
+        setToggle(!toggle); // Prebaci stanje menija
     };
 
-    const handleScroll = () => {
-        setIsVisible(window.scrollY < 180); // Ažurirano da kontroliše vidljivost menija na osnovu skrola
-    };
-
+    // useEffect koji prati promene u 'toggle' i loguje novu vrednost
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+        console.log('Toggle state:', toggle);
+
+        // Zatvori meni kad se klikne bilo gde van menija
+        const handleOutsideClick = () => {
+            if (toggle) {
+                setToggle(false);
+                window.scrollTo(0, 0);
+            }
+        };
+
+        window.addEventListener('click', handleOutsideClick);
+        return () => {
+            window.removeEventListener('click', handleOutsideClick);
+        };
+    }, [toggle]);
 
     return (
-        <div className={`flex justify-around items-center lg:flex-row flex-col transition-transform duration-300 ${isVisible ? '' : 'translate-y-[-100px]'}`}>
+        <div className={`flex justify-around items-center lg:flex-row flex-col transition-transform duration-300`}>
             <div className='m-4'>
                 <img src="/4.png" alt="logo" className='w-[250px] h-[250px] rounded-full shadow-2xl shadow-white' />
             </div>
@@ -48,10 +57,14 @@ function Navbar() {
                     </NavLink>
                 </ul>
             </div>
-            <IoMenu size={45} color='black' className='lg:hidden cursor-pointer transform transition duration-300 ease-in-out hover:scale-110 active:scale-95 hover:bg-gray-200 p-2 rounded-md' onClick={handleToggle} />
+
+            {/* Burger meni ikona, vidljiva samo kada je meni zatvoren */}
+            {!toggle && (
+                <IoMenu size={45} color='black' className='lg:hidden cursor-pointer transform transition duration-300 ease-in-out hover:scale-110 active:scale-95 hover:bg-gray-200 p-2 rounded-md' onClick={handleToggle} />
+            )}
 
             {/* Mobilni meni */}
-            <div className={`fixed top-0 p-5 right-0 bg-gray-100 h-full transition-transform duration-300 lg:hidden ${toggle ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className={`fixed top-0 p-5 right-0 bg-gray-100 h-full transition-transform duration-300 lg:hidden ${toggle ? 'translate-x-0' : 'translate-x-full'}`} onClick={(e) => e.stopPropagation()}>
                 <ul className='flex flex-col gap-5 font-roboto p-4'>
                     <NavLink to={'/'} className="relative group" onClick={handleToggle}>
                         <span className="text-black">POČETNA</span>
