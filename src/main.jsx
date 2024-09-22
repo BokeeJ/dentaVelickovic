@@ -8,6 +8,10 @@ import Galerija from './Pages/Galerija'
 import Kontakt from './Pages/Kontakt'
 import Tim from './Pages/Tim'
 import Usluge from './Pages/Usluge'
+import Izbeljivanje from './Pages/Izbeljivanje.jsx'
+import Preventiva from './Pages/Preventiva'
+import Lecenje from './Pages/Lecenje.jsx'
+import Protetika from './Pages/Protetika.jsx'
 
 const router = createBrowserRouter([
   {
@@ -38,6 +42,22 @@ const router = createBrowserRouter([
       {
         path: '/usluge',
         element: <Usluge />,
+      },
+      {
+        path: '/izbeljivanje',
+        element: <Izbeljivanje />,
+      },
+      {
+        path: '/preventiva',
+        element: <Preventiva />,
+      },
+      {
+        path: '/lecenje',
+        element: <Lecenje />,
+      },
+      {
+        path: '/protetika',
+        element: <Protetika />,
       }
     ],
   }

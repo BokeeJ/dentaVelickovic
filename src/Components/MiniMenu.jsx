@@ -4,7 +4,7 @@ function MiniMenu() {
     const [toggle, setToggle] = useState(false)
     const handleToggle = () => setToggle(!toggle)
     return (
-        <div>
+        <div className=''>
             <ul className=' flex gap-5 font-roboto '>
                 <NavLink to={'/'} className="relative group">
                     <a href="/pocetna" className="text-black">POČETNA</a>

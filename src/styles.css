@@ -1,0 +1,34 @@
+#app {
+	height: 100%;
+}
+
+html,
+body {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+.swiper {
+	width: 80%; /* Podesi širinu Swiper-a */
+	height: 500px; /* Podesi željenu visinu Swiper-a */
+}
+
+.swiper-slide {
+	width: 100%; /* Svaki slajd zauzima punu širinu */
+	height: 100%; /* Svaki slajd zauzima 100% visine roditelja */
+}
+
+.swiper-slide img {
+	width: 100%; /* Širina slike prati širinu slajda */
+	height: 100%; /* Visina slike postavljena na 100% */
+	object-fit: contain; /* Održava proporcije slike unutar slajda */
+	/* ili koristi object-fit: cover; */
+}

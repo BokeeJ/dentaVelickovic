@@ -18,7 +18,7 @@ function Navbar() {
         const handleOutsideClick = () => {
             if (toggle) {
                 setToggle(false);
-                window.scrollTo(0, 0);
+
             }
         };
 
