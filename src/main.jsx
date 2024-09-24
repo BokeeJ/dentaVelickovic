@@ -12,6 +12,7 @@ import Izbeljivanje from './Pages/Izbeljivanje.jsx'
 import Preventiva from './Pages/Preventiva'
 import Lecenje from './Pages/Lecenje.jsx'
 import Protetika from './Pages/Protetika.jsx'
+import Hirurgija from './Pages/Hirurgija.jsx'
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
       {
         path: '/protetika',
         element: <Protetika />,
+      },
+      {
+        path: '/hirurgija',
+        element: <Hirurgija />,
       }
     ],
   }

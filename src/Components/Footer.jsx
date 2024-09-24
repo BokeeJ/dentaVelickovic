@@ -10,7 +10,7 @@ function Footer() {
     const tel = '+381658121558'
     const mail = 'urosvelickovic4@gmail.com'
     return (
-        <div className='flex justify-between p-5 items-center lg:flex-row md:flex-row flex-col bg-gray-100'>
+        <div className='flex justify-between p-5 items-center lg:flex-row md:flex-row flex-col bg-gray-50'>
             {/* logo */}
             <div>
                 <Link to={'/'}>
@@ -19,7 +19,7 @@ function Footer() {
             {/* kontakt */}
             <div className='flex flex-col gap-5 justify-center items-center'>
                 <div className='gap-5 flex flex-col'>
-                    <h4 className='font-roboto font-bold m-5'>KONTAKTIRAJTE NAS:</h4>
+                    <h4 className='font-roboto text-xl font-bold m-5'>KONTAKTIRAJTE NAS:</h4>
                     <a href={`tel:${tel}`} className='flex font-bold'><FaPhoneSquare size={25} />065/812-15-58</a>
                     <a href={`mailto:${mail}`} className='flex font-bold font-roboto'> <IoMail size={25} />urošveličković4@gmail.com</a>
 
@@ -33,7 +33,7 @@ function Footer() {
             {/* drustvene mreze */}
             <div className='flex flex-col gap-3 '>
                 <div className='mb-10'>
-                    <h4 className='font-roboto font-bold m-5'>OSTANIMO POVEZANI:</h4>
+                    <h4 className='font-roboto font-bold m-5 text-xl'>OSTANIMO POVEZANI:</h4>
                     <a href="https://www.facebook.com/p/Stomatoloska-Ordinacija-DrLjiljana-Velickovic-100054528097498/?locale=sr_RS"
                         target='_blank'
                         className='flex font-bold font-roboto mt-10 gap-1'><SiFacebook size={25} />Facebook</a>

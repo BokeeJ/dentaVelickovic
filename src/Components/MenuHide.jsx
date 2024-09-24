@@ -23,7 +23,7 @@ function MenuHide() {
                     target='_blank'><SiInstagram size={25} /></a>
 
             </div>
-            <div className='flex m-5 gap-3 '>
+            <div className='flex m-5 gap-3'>
                 <a href={`tel:${phone}`}
                     target='_blank'
                     className='text-[15px] font-bold font-roboto flex gap-1'><LuPhone size={25} />065/812-15-58</a>

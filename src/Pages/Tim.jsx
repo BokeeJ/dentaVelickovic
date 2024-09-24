@@ -51,7 +51,7 @@ function Tim() {
                     <img src="/slika2.webp" className='h-[500px] lg:p-0 p-2' alt="Tim" />
                     <div className='flex justify-center flex-col items-center bg-gray-100 p-2'>
                         <h5 className='text-2xl m-5 font-bold font-roboto'> Dr. Ljiljana Veličković</h5>
-                        <p className='text-center font-roboto font-semibold'>Ljiljana Veličković je iskusna stomatologinja sa više od 20 godina prakse u svom polju. Njena strast prema stomatologiji i posvećenost očuvanju oralnog zdravlja čine je izuzetnim stručnjakom. Tokom svoje karijere, Ljiljana je radila sa brojnim pacijentima, pružajući im personalizovane tretmane i brigu koja je uvek usmerena na njihove specifične potrebe.</p></div>
+                        <p className='text-center font-roboto font-semibold'>Ljiljana Veličković je specijalista stomatološke protetike sa više od 30 godina iskustva u svom polju.Tokom svoje karijere pohađalaje broje edukacije i kongrese gde je usavršavala svoje znanjei presmeravalau svoju praksu kako bi pruzala što bolji tretman svojim pacijentima.</p></div>
 
                 </motion.div>
                 {/* uros velickovic */}

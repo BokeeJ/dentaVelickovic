@@ -64,7 +64,7 @@ function Navbar() {
             )}
 
             {/* Mobilni meni */}
-            <div className={`fixed top-0 p-5 right-0 bg-gray-100 h-full transition-transform duration-300 lg:hidden ${toggle ? 'translate-x-0' : 'translate-x-full'}`} onClick={(e) => e.stopPropagation()}>
+            <div className={`fixed top-0 right-0 p-5 bg-gray-300 h-full transition-transform duration-300 lg:hidden ${toggle ? 'translate-x-0' : 'translate-x-full'}`} onClick={(e) => e.stopPropagation()}>
                 <ul className='flex flex-col gap-5 font-roboto p-4'>
                     <NavLink to={'/'} className="relative group" onClick={handleToggle}>
                         <span className="text-black">POČETNA</span>

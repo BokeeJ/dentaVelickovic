@@ -23,43 +23,65 @@ function Home() {
         <div className='bg-cover relative bg-center min-h-screen bg-[url(/pocetna.webp)] flex justify-center items-center flex-col'>
             <div className='absolute inset-0 bg-gradient-to-b from-white via-transparent to-transparent rounded-md'></div>
 
-            <div className='relative p-2 grid grid-cols-2 lg:grid-cols-4 gap-2 justify-center items-center mt-10 opacity-80'>
-                <div className='bg-white lg:p-5 p-1 flex justify-center flex-col items-center shadow-xl shadow-black rounded-l-xl  hover:m-1 transition-all duration-700 lg:w-[250px] lg:h-[250px] w-[130px] h-[130px]'>
-                    <Link to={'/izbeljivanje'}>
-                        <img src="/zub1.svg" alt="zub" className='lg:w-[150px] lg:h-[150px] w-[80px] h-[80px]' /></Link>
-                    <h3 className='lg:text-xl  font-bold font-roboto'>IZBELJIVANJE</h3>
-                    <hr className='w-[80%] border-black border m-2' />
-                    <h5 className='font-bold font-roboto lg:block hidden'>ORDINACIJSKO I KUĆNO</h5>
+            <div className='flex lg:flex-row flex-col mt-10 gap-5'>
+                {/* PRVA KARTICA */}
+                <div className='relative  bg-white p-1 flex justify-center flex-col items-center shadow-xl shadow-black rounded-2xl hover:scale-105 hover:shadow-2xl hover:shadow-gray-600 transition-transform duration-500 ease-in-out w-[230px] h-[130px] md:w-[200px] md:h-[250px]'>
+                    <Link to={'/izbeljivanje'} className="relative z-10">
+                        <img src="/zub1.svg" alt="zub" className='w-[80px] h-[80px] md:w-[100px] md:h-[150px] transition-transform duration-500 ease-in-out hover:scale-110' />
+                    </Link>
+                    <h3 className='text-xl font-bold font-roboto relative z-10'>IZBELJIVANJE</h3>
+                    <hr className='w-[80%] border-black border m-2 relative z-10' />
+                    <h5 className='font-bold font-roboto md:block hidden relative z-10'>ORDINACIJSKO I KUĆNO</h5>
                 </div>
-                <div className='bg-white  lg:p-5 p-1 flex justify-center flex-col items-center shadow-xl shadow-black hover:m-1 transition-all duration-700 lg:w-[250px] lg:h-[250px] w-[130px] h-[130px] lg:rounded-none rounded-r-xl'>
-                    <Link to={'/preventiva'}>
-                        <img src="/zub2.svg" alt="zub" className='lg:w-[150px] lg:h-[150px] w-[80px] h-[80px]' /></Link>
-                    <h3 className='lg:text-xl font-bold font-roboto'>PREVENTIVA</h3>
-                    <hr className='w-[80%] border-black border m-2' />
-                    <h5 className='font-bold font-roboto  lg:block hidden'>BESPLATAN PREGLED I SAVET</h5>
+
+                {/* DRUGA KARTICA */}
+                <div className='relative bg-white p-1 flex justify-center flex-col rounded-2xl items-center shadow-xl shadow-black hover:scale-105 hover:shadow-2xl hover:shadow-gray-600 transition-transform duration-500 ease-in-out w-[230px] h-[130px] md:w-[200px] md:h-[250px]'>
+                    <Link to={'/preventiva'} className="relative z-10">
+                        <img src="/zub2.svg" alt="zub" className='w-[80px] h-[80px] md:w-[100px] md:h-[150px] transition-transform duration-500 ease-in-out hover:scale-110' />
+                    </Link>
+                    <h3 className='text-xl font-bold font-roboto relative z-10'>PREVENTIVA</h3>
+                    <hr className='w-[80%] border-black border m-2 relative z-10' />
+                    <h5 className='font-bold font-roboto md:block hidden relative z-10'>PREGLED I SAVET</h5>
                 </div>
-                <div className='bg-white lg:p-5 p-1 flex justify-center flex-col items-center shadow-xl shadow-black lg:rounded-none rounded-l-xl hover:m-1 transition-all duration-700 lg:w-[250px] lg:h-[250px] w-[130px] h-[130px]'>
-                    <Link to={'/lecenje'}>
-                        <img src="/zub3.svg" alt="zub" className='lg:w-[150px] lg:h-[150px] w-[80px] h-[80px]' /></Link>
-                    <h3 className='lg:text-xl font-bold font-roboto'>LEČENJE ZUBA</h3>
-                    <hr className='w-[80%] border-black border m-2' />
-                    <h5 className='font-bold font-roboto  lg:block hidden'>LEČENJE, POPRAVKA, VAĐENJE</h5>
+
+                {/* TREĆA KARTICA */}
+                <div className='relative bg-white p-1 flex justify-center flex-col rounded-2xl items-center shadow-xl shadow-black hover:scale-105 hover:shadow-2xl hover:shadow-gray-600 transition-transform duration-500 ease-in-out w-[230px] h-[130px] md:w-[200px] md:h-[250px]'>
+                    <Link to={'/lecenje'} className="relative z-10">
+                        <img src="/zub3.svg" alt="zub" className='w-[80px] h-[80px] md:w-[100px] md:h-[150px] transition-transform duration-500 ease-in-out hover:scale-110' />
+                    </Link>
+                    <h3 className='text-xl font-bold font-roboto relative z-10'>LEČENJE ZUBA</h3>
+                    <hr className='w-[80%] border-black border m-2 relative z-10' />
+                    <h5 className='font-bold font-roboto md:block hidden relative z-10'>LEČENJE, POPRAVKA</h5>
                 </div>
-                <div className='bg-white lg:p-5 p-1 flex justify-center flex-col items-center shadow-xl shadow-black rounded-r-xl hover:m-1 transition-all duration-700 lg:w-[250px] lg:h-[250px] w-[130px] h-[130px]'>
-                    <Link to={'/protetika'}>
-                        <img src="/zub4.svg" alt="zub" className='lg:w-[150px] lg:h-[150px] w-[80px] h-[80px] relative' /></Link>
-                    <h3 className='lg:text-xl font-bold font-roboto'>PROTETIKA</h3>
-                    <hr className='w-[80%] border-black border m-2' />
-                    <h5 className='font-bold font-roboto  lg:block hidden'>ZUBNA PROTETIKA</h5>
+
+                {/* ČETVRTA KARTICA */}
+                <div className='relative rounded-2xl bg-white p-1 flex justify-center flex-col items-center shadow-xl shadow-black hover:scale-105 hover:shadow-2xl hover:shadow-gray-600 transition-transform duration-500 ease-in-out w-[230px] h-[130px] md:w-[200px] md:h-[250px]'>
+                    <Link to={'/protetika'} className="relative z-10">
+                        <img src="/zub4.svg" alt="zub" className='w-[80px] h-[80px] md:w-[100px] md:h-[150px] transition-transform duration-500 ease-in-out hover:scale-110' />
+                    </Link>
+                    <h3 className='text-xl font-bold font-roboto relative z-10'>PROTETIKA</h3>
+                    <hr className='w-[80%] border-black border m-2 relative z-10' />
+                    <h5 className='font-bold font-roboto md:block hidden relative z-10'>ZUBNA PROTETIKA</h5>
+                </div>
+
+                {/* PETA KARTICA */}
+                <div className='relative bg-white p-1 flex justify-center flex-col items-center shadow-xl shadow-black rounded-2xl hover:scale-105 hover:shadow-2xl hover:shadow-gray-600 transition-transform duration-500 ease-in-out w-[230px] h-[130px] md:w-[200px] md:h-[250px]'>
+                    <Link to={'/hirurgija'} className="relative z-10">
+                        <img src="/hirurg.webp" alt="zub" className='w-[80px] h-[60px] md:w-[100px] md:h-[120px] relative transition-transform duration-500 ease-in-out hover:scale-110' />
+                    </Link>
+                    <h3 className='text-xl font-bold font-roboto relative z-10'>ORALNA HIRURGIJA</h3>
+                    <hr className='w-[80%] border-black border m-2 relative z-10' />
+                    <h5 className='font-bold font-roboto md:block hidden relative z-10'>ZUBNA PROTETIKA</h5>
                 </div>
             </div>
+
             {/* nas tim */}
             <div className='mt-10'>
                 <div >
 
                 </div>
                 <div className='flex justify-center'>
-                    <img src="/veli.svg" className='lg:w-[50%] w-[80%] rounded-2xl opacity-80' alt="zubar" />
+                    <img src="/veli.svg" className='lg:w-[50%] w-[80%] rounded-2xl opacity-80 hover:border-2 hover:border-black transition-all hover:shadow-lg hover:shadow-black' alt="zubar" />
                 </div>
 
             </div>
