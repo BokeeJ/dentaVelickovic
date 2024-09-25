@@ -50,7 +50,7 @@ function Tim() {
                     }} className='lg:w-[50%] flex flex-col lg:flex-row p-5 shadow-xl shadow-gray-500'>
                     <img src="/slika2.webp" className='h-[500px] lg:p-0 p-2' alt="Tim" />
                     <div className='flex justify-center flex-col items-center bg-gray-100 p-2'>
-                        <h5 className='text-2xl m-5 font-bold font-roboto'> Dr. Ljiljana Veličković</h5>
+                        <h5 className='text-2xl m-5 font-bold font-roboto'> Dr Ljiljana Veličković</h5>
                         <p className='text-center font-roboto font-semibold'>Ljiljana Veličković je specijalista stomatološke protetike sa više od 30 godina iskustva u svom polju.Tokom svoje karijere pohađalaje broje edukacije i kongrese gde je usavršavala svoje znanjei presmeravalau svoju praksu kako bi pruzala što bolji tretman svojim pacijentima.</p></div>
 
                 </motion.div>
@@ -64,7 +64,7 @@ function Tim() {
                     }} className='lg:w-[50%] flex flex-col lg:flex-row p-5 shadow-xl shadow-gray-500'>
                     <img src="/Slika1.webp" className='h-[500px] lg:p-0 p-2' alt="Tim" />
                     <div className='flex justify-center flex-col items-center bg-gray-100 p-2'>
-                        <h5 className='text-2xl m-5 font-bold font-roboto'> Dr. Uroš Veličković</h5>
+                        <h5 className='text-2xl m-5 font-bold font-roboto'> Dr Uroš Veličković</h5>
                         <p className='text-center font-roboto font-semibold'>Uroš Veličković je stomatolog sa više od 10 godina iskustva, poznat po svojoj posvećenosti pacijentima i visokim standardima u pružanju stomatološke zaštite. Njegova stručnost obuhvata širok spektar stomatoloških tretmana, od preventivnih mera do složenih procedura, uvek sa ciljem da pruži najbolju moguću negu.</p>
                     </div>
                 </motion.div>
