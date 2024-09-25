@@ -21,8 +21,8 @@ function MiniMenu() {
     }, []);
 
     return (
-        <div className={`${showMenu ? 'block' : 'hidden'} fixed top-0 left-0 right-0 bg-white shadow-md p-4 z-50`}>
-            <ul className='flex gap-5 font-roboto justify-center'>
+        <div className={`${showMenu ? 'block' : 'hidden'}  fixed top-0 left-0 right-0 bg-white shadow-lg p-4 z-50`}>
+            <ul className='flex gap-3 lg:gap-5 font-roboto justify-center font-medium'>
                 <NavLink to={'/'} className="relative group">
                     <a href="/pocetna" className="text-black">POČETNA</a>
                     <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>

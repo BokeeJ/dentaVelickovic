@@ -32,7 +32,8 @@ function Hirurgija() {
                 <img src="/dental3.webp" alt="izbeljivanje" className='lg:w-[50%] lg:h-[50%] p-5' />
                 <div className='w-full lg:text-l p-5 flex flex-col items-center'>
                     <p className='text-center font-roboto font-semibold '>
-                        Oralna hirurgija je specijalizovana grana stomatologije koja se bavi dijagnostikom, lečenjem i rehabilitacijom pacijenata sa bolestima i stanjima u usnoj šupljini i čeljustima. Ova disciplina obuhvata širok spektar procedura, uključujući vađenje zuba, hirurške zahvate na desnima, ugradnju dentalnih implantata, lečenje oralnih infekcija, kao i rekonstrukciju čeljusti i lica nakon povreda ili bolesti.
+                        Oralna hirurgija je specijalistička stomatološka oblast koja se bavi dijagnostikom i terapijom mnogih oboljenja i stanja u usnoj duplji.
+
                         <br /><br />
                         Vađenje zuba
 

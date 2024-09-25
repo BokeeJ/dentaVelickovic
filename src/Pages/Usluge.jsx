@@ -3,6 +3,7 @@ import Lecenje from '../Pages/Lecenje'
 import Izbeljivanje from '../Pages/Izbeljivanje'
 import Protetika from '../Pages/Protetika'
 import Preventiva from '../Pages/Preventiva'
+import Hirurgija from '../Pages/Hirurgija'
 
 function Usluge() {
     return (
@@ -11,6 +12,7 @@ function Usluge() {
             <Izbeljivanje />
             <Protetika />
             <Preventiva />
+            <Hirurgija />
         </div>
     )
 }

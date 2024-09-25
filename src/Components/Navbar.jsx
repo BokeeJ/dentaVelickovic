@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { IoMenu } from "react-icons/io5";
 
 function Navbar() {
@@ -31,7 +31,7 @@ function Navbar() {
     return (
         <div className={`flex justify-around items-center lg:flex-row flex-col transition-transform duration-300`}>
             <div className='m-4'>
-                <img src="/4.png" alt="logo" className='w-[250px] h-[250px] rounded-full shadow-2xl shadow-white' />
+                <Link to={'/'}> <img src="/4.png" alt="logo" className='w-[250px] h-[250px] rounded-full shadow-2xl shadow-white' /></Link>
             </div>
             <div className='m-6 lg:block hidden'>
                 <ul className='flex gap-5 font-roboto'>

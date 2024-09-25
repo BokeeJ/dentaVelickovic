@@ -76,6 +76,15 @@ export default function Galerija() {
                         <img src="/23.webp" alt='23' />
                     </SwiperSlide>
                 </Swiper></div>
+            <div className='flex justify-center m-5'>
+                <video
+                    className="w-full max-w-lg shadow-2xl shadow-black rounded-2xl"
+                    controls
+                >
+                    <source src="/video.mp4" type="video/mp4" />
+
+                </video>
+            </div>
         </div>
     );
 }
