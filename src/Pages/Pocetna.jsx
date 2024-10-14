@@ -69,9 +69,9 @@ function Home() {
                     <Link to={'/hirurgija'} className="relative z-10">
                         <img src="/hirurg.webp" alt="zub" className='w-[80px] h-[60px] md:w-[100px] md:h-[120px] relative transition-transform duration-500 ease-in-out hover:scale-110' />
                     </Link>
-                    <h3 className='text-xl font-bold font-roboto relative z-10'>ORALNA HIRURGIJA</h3>
+                    <h3 className='text-xl font-bold font-roboto relative z-10 lg:mt-7 mt-6'>ORALNA HIRURGIJA</h3>
                     <hr className='w-[80%] border-black border m-2 relative z-10' />
-                    <h5 className='font-bold font-roboto md:block hidden relative z-10'>ZUBNA PROTETIKA</h5>
+                    <h5 className='font-bold font-roboto md:block hidden relative z-10'>VAĐENJE ZUBA</h5>
                 </div>
             </div>
 
